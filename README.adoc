@@ -1,0 +1,52 @@
+= Astra Tutorials documentation
+
+This repo contains the source files for the Astra Tutorials documentation.
+
+The docs are written in AsciiDoc and use Antora to generate the output.
+
+The Astra Tutorials docs are organized with one Antora component, tutorials, currently.
+That component has one module, ROOT.
+
+== Dependencies
+
+Antora requires NodeJS, install it and then install the project dependencies:
+
+[source, shell, subs="attributes+"]
+----
+npm install
+----
+
+== Viewing the current HTML output
+
+//The current development version of the docs are generated and published at https://stargate.github.io/docs/.
+
+//The `.github/workflows/antora.yml` GitHub action will generate and publish the development docs on pushes to the master branch. Development docs use the `site-local.yaml` Antora site configuration file.
+
+== Generating and viewing the HTML output locally
+
+The docs can be generated locally during development, to check work. 
+
+Use the `build-locally.sh` script with the appropriate docset to build:
+
+[source, shell, subs="attributes+"]
+----
+./build-locally.sh tutorials
+----
+
+This build script will make sure you have the correct prerequisites installed for the antora build.
+
+== Publishing to the Tutorials website
+
+// clun - you'll want to change this
+//Pushing a tag starting with `v` will trigger the `.github/workflows/publish.yaml` action that generates the docs and publishes them to the `stargate/website` repo in the `gh-pages` branch. The output will be put in the `docs` directory. Live docs use the `site-publish.yaml` Antora site configuration file.
+
+//The Deploy to GitHub Pages action uses a repo secret in order to push the changes to stargate/website.
+//To use a different secret:
+
+//. https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line#creating-a-token[Create a personal access token].
+//. https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets#creating-encrypted-secrets[Add it to stargate/docs as a repo secret].
+//. Update the name of the secret in `publish.yaml`.
+
+== Reporting bugs
+
+File a https://github.com/datastax/tutorials/issues[GitHub issue].

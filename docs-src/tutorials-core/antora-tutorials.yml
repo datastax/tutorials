@@ -1,0 +1,14 @@
+name: tutorials
+title: Awesome Astra Documentation
+version: ~
+nav:
+- modules/ROOT/nav.adoc
+#- modules/quickstart/nav.adoc
+#- modules/concepts/nav.adoc
+#- modules/plan/nav.adoc
+#- modules/install/nav.adoc
+#- modules/manage/nav.adoc
+#- modules/connect/nav.adoc
+#- modules/secure/nav.adoc
+#- modules/migrate/nav.adoc
+#- modules/develop/snav.adoc
