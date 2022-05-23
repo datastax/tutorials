@@ -2,10 +2,10 @@
 
 This repo contains the source files for the Astra Tutorials documentation.
 
-The docs are written in AsciiDoc and use Antora to generate the output.
+The docs are written in AsciiDoc and use https://docs.antora.org/antora/latest/[Antora] to generate the output.
 
-The Astra Tutorials docs are organized with one Antora component, tutorials, currently.
-That component has one module, ROOT.
+The Astra Tutorials docs are currently organized with one antora component, tutorials, and one module, ROOT.
+The ROOT module has directories for examples, partials, pages, attachments, and a nav.adoc for navigation.
 
 == Dependencies
 

@@ -1,0 +1,1 @@
+Attachments are any non-AsciiDoc files that you need in your site. We use it for pre-generated HTML files of the API references.

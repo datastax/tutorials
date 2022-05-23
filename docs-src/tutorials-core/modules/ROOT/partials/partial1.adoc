@@ -1,0 +1,6 @@
+== Partial
+
+Partials are files that are reused, and can be included in a asciidoc page.
+
+Format:
+include:partial$partial1.adoc[]
