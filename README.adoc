@@ -7,6 +7,29 @@ The docs are written in AsciiDoc and use https://docs.antora.org/antora/latest/[
 The Astra Tutorials docs are currently organized with one antora component, tutorials, and one module, ROOT.
 The ROOT module has directories for examples, partials, pages, attachments, and a nav.adoc for navigation.
 
+Playbooks are YAML files used to build the website using antora.
+`docs-src` is the location of all content source, i.e., the AsciiDoc files.
+
+The file structure has a particular form:
+
+📒 repository 
+  📄 antora.yml 
+  📂 modules 
+    📂 ROOT 
+      📁 attachments 
+      📁 examples 
+      📁 images 
+      📁 pages 
+      📁 partials 
+      📄 nav.adoc 
+    📂 named-module 
+      📁 pages
+      📄 nav.adoc 
+  📁 packages 
+
+Note that our repository has one layer between repository and modules, a component. Each component must have a antora.yml file and a modules directory with a ROOT directory at a minimum.
+
+
 == Dependencies
 
 Antora requires NodeJS, install it and then install the project dependencies:
