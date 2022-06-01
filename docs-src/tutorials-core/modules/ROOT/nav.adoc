@@ -1,2 +1,10 @@
 * xref:index.adoc[Introduction]
-* xref:second.adoc[Second page]
+* *Astra Core*
+** xref:astra/create-account.adoc[Create account]
+** xref:astra/create-token.adoc[Create token]
+* *Other stuff*
+** xref:astra/create-instance.adoc[Create instance]
+** xref:astra/create-topic.adoc[Create topic]
+** xref:astra/download-scb.adoc[Download SCB]
+** xref:astra/cqlproxy.adoc[CQL proxy]	
+** xref:astra/faq.adoc[FAQ]
